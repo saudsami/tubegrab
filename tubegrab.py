@@ -7,9 +7,9 @@ Requirements:
     FFmpeg installed and on your PATH (https://ffmpeg.org/download.html)
 
 Usage:
-    python youtube_mp3.py urls.txt
-    python youtube_mp3.py urls.txt --out downloads --quality 320
-    python youtube_mp3.py urls.txt --out downloads --type both
+    python tubegrab.py urls.txt
+    python tubegrab.py urls.txt --out downloads --quality 320
+    python tubegrab.py urls.txt --out downloads --type both
 
 The URL file should have one YouTube link per line. Blank lines and lines
 starting with # are ignored, so you can add comments.

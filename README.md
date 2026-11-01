@@ -1,6 +1,6 @@
-# YouTube downloader
+# tubegrab
 
-`youtube_mp3.py` downloads a list of YouTube videos and saves each one as an
+`tubegrab.py` downloads a list of YouTube videos and saves each one as an
 MP3 audio file, a 720p MP4 video file, or both. Each file includes title and
 artist tags, and the video thumbnail as cover art.
 
@@ -45,7 +45,7 @@ By default, the script saves the audio of each video as an MP3 file.
 1. From the project folder, run the script:
 
    ```powershell
-   python youtube_mp3.py urls.txt --out songs
+   python tubegrab.py urls.txt --out songs
    ```
 
 The MP3 files are saved in the `songs` folder.
@@ -59,14 +59,14 @@ To save each video as an MP4 file instead of an MP3, add `--type mp4`. This
 example saves the videos in a `videos` folder:
 
 ```powershell
-python youtube_mp3.py urls.txt --out videos --type mp4
+python tubegrab.py urls.txt --out videos --type mp4
 ```
 
 To save both an MP3 and an MP4 for each video in the same folder, use
 `--type both`:
 
 ```powershell
-python youtube_mp3.py urls.txt --out songs --type both
+python tubegrab.py urls.txt --out songs --type both
 ```
 
 Videos are saved at 720p, or at the highest resolution available if the
@@ -84,7 +84,7 @@ almost any device.
 For example, to save MP3 files at 320 kbps:
 
 ```powershell
-python youtube_mp3.py urls.txt --out songs --quality 320
+python tubegrab.py urls.txt --out songs --quality 320
 ```
 
 ## Files the script creates
@@ -98,7 +98,7 @@ The script creates these files in the output folder:
   run the script with this file:
 
   ```powershell
-  python youtube_mp3.py songs\failed_urls.txt --out songs
+  python tubegrab.py songs\failed_urls.txt --out songs
   ```
 
   If you used `--type`, add the same `--type` value to this command.
